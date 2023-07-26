@@ -9,7 +9,28 @@ import SwiftUI
 
 struct RecordView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            ZStack {
+                HStack {
+                    Spacer()
+                    Button (action: {
+                        
+                    }){
+                        Image(systemName: "plus")
+                            .resizable()
+                            .frame(width: 20, height: 15)
+                            .foregroundColor(.black)
+                    }
+                }
+                Text("記録する")
+                    .fontWeight(.bold)
+            }
+            .padding(.top, UIApplication.shared.windows.first?.safeAreaInsets.top)
+            .padding()
+            .overlay(Rectangle().stroke(Color.black.opacity(0.05), lineWidth: 2))
+            Spacer()
+        }
+        .edgesIgnoringSafeArea(.top)
     }
 }
 
