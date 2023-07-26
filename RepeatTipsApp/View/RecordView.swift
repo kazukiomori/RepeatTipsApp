@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct RecordView: View {
+    @State var progressValue: CGFloat = 0
     var body: some View {
         VStack {
             ZStack {
@@ -28,6 +29,10 @@ struct RecordView: View {
             .padding(.top, UIApplication.shared.windows.first?.safeAreaInsets.top)
             .padding()
             .overlay(Rectangle().stroke(Color.black.opacity(0.05), lineWidth: 2))
+            
+            PieChartView(progress: $progressValue)
+                            .frame(width: 250.0, height: 250.0)
+                            .padding(50)
             Spacer()
         }
         .edgesIgnoringSafeArea(.top)
