@@ -1,15 +1,16 @@
 //
-//  CreateThemaView.swift
+//  ConfirmView.swift
 //  RepeatTipsApp
 //
-//  Created by Kazuki Omori on 2023/07/27.
+//  Created by Kazuki Omori on 2023/07/28.
 //
 
 import SwiftUI
 
-struct CreateThemaView: View {
+struct ConfirmView: View {
     @State private var activie = false
-    @State private var thema = ""
+    @State private var thema = "うんこする"
+    @State private var time = Date()
     var body: some View {
 
         VStack {
@@ -20,7 +21,7 @@ struct CreateThemaView: View {
                     }){
                     }
                 }
-                Text("続けたいテーマを決める")
+                Text("確認")
                     .fontWeight(.bold)
                     .font(.system(size: 20))
             }
@@ -28,14 +29,33 @@ struct CreateThemaView: View {
             .padding()
             .overlay(Rectangle().stroke(Color.black.opacity(0.05), lineWidth: 2))
             .background(.gray)
-            Text("ここで決めたことを\n毎日続けます")
+            Text("継続すること")
                 .font(.system(size:30))
                 .bold()
 //                .padding(.bottom)
-            TextField("継続したいこと", text: $thema)
-                            .textFieldStyle(RoundedBorderTextFieldStyle())
-                            .padding(.top)
-                            .font(.system(size: 25))
+            
+                Text("\(thema)")
+                    .font(.system(size:30))
+                    .bold()
+                    .padding()
+                    .frame(width: 800, height: 100)
+                    .background(Color.purple)
+                    .padding()
+            Spacer()
+                .frame(height: 70)
+            
+            Text("実行するタイミング")
+                .font(.system(size:30))
+                .bold()
+            
+                Text("\(time)")
+                    .font(.system(size:30))
+                    .bold()
+                    .padding()
+                    .frame(width: 800, height: 100)
+                    .background(Color.purple)
+                    .padding()
+
             Spacer()
             VStack {
                 Button (action: {
@@ -45,7 +65,7 @@ struct CreateThemaView: View {
                         activie = true
                     }
                 }){
-                    Text("次へ")
+                    Text("始める！")
                         .font(.largeTitle)
                         .foregroundColor(Color.white)
                 }
@@ -61,8 +81,8 @@ struct CreateThemaView: View {
     
 }
 
-struct CreateThemaView_Previews: PreviewProvider {
+struct ConfirmView_Previews: PreviewProvider {
     static var previews: some View {
-        CreateThemaView()
+        ConfirmView()
     }
 }

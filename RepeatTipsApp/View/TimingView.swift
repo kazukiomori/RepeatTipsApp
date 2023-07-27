@@ -22,6 +22,7 @@ struct TimingView: View {
                 }
                 Text("いつやるか考える")
                     .fontWeight(.bold)
+                    .font(.system(size: 20))
             }
             .padding(.top, UIApplication.shared.windows.first?.safeAreaInsets.top)
             .padding()
