@@ -27,7 +27,7 @@ struct TimingView: View {
             .padding(.top, UIApplication.shared.windows.first?.safeAreaInsets.top)
             .padding()
             .overlay(Rectangle().stroke(Color.black.opacity(0.05), lineWidth: 2))
-            .background(.gray)
+            .background(Color.backgroundGray)
             Text("毎日決まった時間に\n行動することが継続のコツです")
                 .font(.system(size:25))
                 .bold()

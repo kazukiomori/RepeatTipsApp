@@ -27,7 +27,7 @@ struct CreateThemaView: View {
             .padding(.top, UIApplication.shared.windows.first?.safeAreaInsets.top)
             .padding()
             .overlay(Rectangle().stroke(Color.black.opacity(0.05), lineWidth: 2))
-            .background(.gray)
+            .background(Color.backgroundGray)
             Text("ここで決めたことを\n毎日続けます")
                 .font(.system(size:30))
                 .bold()
