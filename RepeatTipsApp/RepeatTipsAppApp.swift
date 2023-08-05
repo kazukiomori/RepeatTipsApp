@@ -11,7 +11,8 @@ import SwiftUI
 struct RepeatTipsAppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+//            ContentView()
+            CreateThemaView()
         }
     }
 }
