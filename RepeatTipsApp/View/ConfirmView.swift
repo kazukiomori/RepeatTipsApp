@@ -8,11 +8,10 @@
 import SwiftUI
 
 struct ConfirmView: View {
-    @State private var activie = false
-    @State private var thema = "うんこする"
-    @State private var time = Date()
+    @State var thema: String
+    @State var time: String
+    @State var path = NavigationPath()
     var body: some View {
-
         VStack {
             ZStack {
                 HStack {
@@ -62,7 +61,7 @@ struct ConfirmView: View {
                     if thema == "" {
                         return
                     } else {
-                        activie = true
+                       
                     }
                 }){
                     Text("始める！")
@@ -81,8 +80,8 @@ struct ConfirmView: View {
     
 }
 
-struct ConfirmView_Previews: PreviewProvider {
-    static var previews: some View {
-        ConfirmView()
-    }
-}
+//struct ConfirmView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ConfirmView()
+//    }
+//}
