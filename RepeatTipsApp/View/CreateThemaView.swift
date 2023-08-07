@@ -7,12 +7,16 @@
 
 import SwiftUI
 
+enum DestinationPath: Hashable{
+    case timing(thema: String)
+    case confirm(thema: String, time: Date)
+}
+
 struct CreateThemaView: View {
-    @State private var activie = false
-    @State private var thema = ""
-    @State  private var path: [String] = []
+    @State var activie = false
+    @State var thema = ""
+    @State private var path: [DestinationPath] = []
     var body: some View {
-        
         NavigationStack(path: $path) {
             VStack {
                 ZStack {
@@ -41,7 +45,7 @@ struct CreateThemaView: View {
                 Spacer()
                 VStack {
                     Button (action: {
-                        path.append(thema)
+                        path.append(DestinationPath.timing(thema: thema))
                     }){
                         Text("次へ")
                             .font(.largeTitle)
@@ -50,13 +54,19 @@ struct CreateThemaView: View {
                     .padding()
                     .background(Color.blue)
                     .frame(width: 300, height: 50)
+                    .disabled(thema.count == 0)
                 }
                 Spacer()
                     .frame(height: 20)
             }
             .edgesIgnoringSafeArea(.top)
-            .navigationDestination(for: String.self) { thema in
-                TimingView(path: $path)
+            .navigationDestination(for: DestinationPath.self) { DestinationPath in
+                switch DestinationPath {
+                case let DestinationPath.timing(thema):
+                    TimingView(thema: thema, path: $path)
+                case let DestinationPath.confirm(thema, time):
+                    ConfirmView(thema: thema, time: DateUtils.stringFromDate(date: time))
+                }
             }
         }
     }
