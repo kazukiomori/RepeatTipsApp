@@ -3,6 +3,7 @@
     <entity name="Thema" representedClassName="Thema" syncable="YES" codeGenerationType="class">
         <attribute name="dateList" optional="YES" attributeType="Binary"/>
         <attribute name="detail" optional="YES" attributeType="String"/>
+        <attribute name="startDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="title" optional="YES" attributeType="String"/>
     </entity>
 </model>
