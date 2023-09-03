@@ -31,7 +31,7 @@
 		3B9EBB0B2A7561D0007CB4E0 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		3BA1FA5A2A7D76EC00A8714F /* Window.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Window.swift; sourceTree = "<group>"; };
 		3BA1FA5C2A7EA3F800A8714F /* DateUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtil.swift; sourceTree = "<group>"; };
-		3BA1FA5F2A867F8B00A8714F /* RepeatTipsModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RepeatTipsModel.xcdatamodel; sourceTree = "<group>"; };
+		3BA1FA5F2A867F8B00A8714F /* RepeatTipsModel.xcdatamodel */ = {isa = PBXFileReference; explicitFileType = wrapper.xcdatamodel; path = RepeatTipsModel.xcdatamodel; sourceTree = "<group>"; };
 		3BABCA3C2A6EA8AA007FD708 /* RepeatTipsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RepeatTipsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BABCA3F2A6EA8AA007FD708 /* RepeatTipsAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatTipsAppApp.swift; sourceTree = "<group>"; };
 		3BABCA412A6EA8AA007FD708 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
