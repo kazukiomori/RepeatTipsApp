@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B68614C2AAC061C00582615 /* DataManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B68614B2AAC061C00582615 /* DataManagement.swift */; };
 		3B9EBB042A71542C007CB4E0 /* PieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9EBB032A71542C007CB4E0 /* PieChartView.swift */; };
 		3B9EBB062A718BBA007CB4E0 /* CreateThemaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9EBB052A718BBA007CB4E0 /* CreateThemaView.swift */; };
 		3B9EBB082A72E12F007CB4E0 /* TimingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9EBB072A72E12F007CB4E0 /* TimingView.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B68614B2AAC061C00582615 /* DataManagement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManagement.swift; sourceTree = "<group>"; };
 		3B9EBB032A71542C007CB4E0 /* PieChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartView.swift; sourceTree = "<group>"; };
 		3B9EBB052A718BBA007CB4E0 /* CreateThemaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateThemaView.swift; sourceTree = "<group>"; };
 		3B9EBB072A72E12F007CB4E0 /* TimingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimingView.swift; sourceTree = "<group>"; };
@@ -52,6 +54,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B68614A2AAC05C100582615 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				3BA1FA5E2A867F8B00A8714F /* RepeatTipsModel.xcdatamodeld */,
+				3B68614B2AAC061C00582615 /* DataManagement.swift */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
 		3BA1FA592A7D76D600A8714F /* Util */ = {
 			isa = PBXGroup;
 			children = (
@@ -64,7 +75,6 @@
 		3BABCA332A6EA8AA007FD708 = {
 			isa = PBXGroup;
 			children = (
-				3BA1FA5E2A867F8B00A8714F /* RepeatTipsModel.xcdatamodeld */,
 				3BABCA3E2A6EA8AA007FD708 /* RepeatTipsApp */,
 				3BABCA3D2A6EA8AA007FD708 /* Products */,
 			);
@@ -84,6 +94,7 @@
 				3BA1FA592A7D76D600A8714F /* Util */,
 				3BABCA4D2A6ED750007FD708 /* View */,
 				3BABCA3F2A6EA8AA007FD708 /* RepeatTipsAppApp.swift */,
+				3B68614A2AAC05C100582615 /* DataModel */,
 				3BABCA432A6EA8AC007FD708 /* Assets.xcassets */,
 				3BABCA452A6EA8AD007FD708 /* Preview Content */,
 				3B9EBB0B2A7561D0007CB4E0 /* ColorExtension.swift */,
@@ -186,6 +197,7 @@
 				3BABCA512A6EE8FE007FD708 /* ReviewView.swift in Sources */,
 				3BA1FA5D2A7EA3F800A8714F /* DateUtil.swift in Sources */,
 				3BA1FA5B2A7D76EC00A8714F /* Window.swift in Sources */,
+				3B68614C2AAC061C00582615 /* DataManagement.swift in Sources */,
 				3B9EBB042A71542C007CB4E0 /* PieChartView.swift in Sources */,
 				3B9EBB062A718BBA007CB4E0 /* CreateThemaView.swift in Sources */,
 				3B9EBB082A72E12F007CB4E0 /* TimingView.swift in Sources */,
