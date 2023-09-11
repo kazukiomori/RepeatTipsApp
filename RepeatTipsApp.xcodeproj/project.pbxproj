@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3B68614C2AAC061C00582615 /* DataManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B68614B2AAC061C00582615 /* DataManagement.swift */; };
+		3B68614F2AAF826C00582615 /* Thema+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B68614D2AAF826C00582615 /* Thema+CoreDataClass.swift */; };
+		3B6861502AAF826C00582615 /* Thema+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B68614E2AAF826C00582615 /* Thema+CoreDataProperties.swift */; };
 		3B9EBB042A71542C007CB4E0 /* PieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9EBB032A71542C007CB4E0 /* PieChartView.swift */; };
 		3B9EBB062A718BBA007CB4E0 /* CreateThemaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9EBB052A718BBA007CB4E0 /* CreateThemaView.swift */; };
 		3B9EBB082A72E12F007CB4E0 /* TimingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9EBB072A72E12F007CB4E0 /* TimingView.swift */; };
@@ -26,6 +28,8 @@
 
 /* Begin PBXFileReference section */
 		3B68614B2AAC061C00582615 /* DataManagement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManagement.swift; sourceTree = "<group>"; };
+		3B68614D2AAF826C00582615 /* Thema+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Thema+CoreDataClass.swift"; sourceTree = "<group>"; };
+		3B68614E2AAF826C00582615 /* Thema+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Thema+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		3B9EBB032A71542C007CB4E0 /* PieChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartView.swift; sourceTree = "<group>"; };
 		3B9EBB052A718BBA007CB4E0 /* CreateThemaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateThemaView.swift; sourceTree = "<group>"; };
 		3B9EBB072A72E12F007CB4E0 /* TimingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimingView.swift; sourceTree = "<group>"; };
@@ -75,6 +79,8 @@
 		3BABCA332A6EA8AA007FD708 = {
 			isa = PBXGroup;
 			children = (
+				3B68614D2AAF826C00582615 /* Thema+CoreDataClass.swift */,
+				3B68614E2AAF826C00582615 /* Thema+CoreDataProperties.swift */,
 				3BABCA3E2A6EA8AA007FD708 /* RepeatTipsApp */,
 				3BABCA3D2A6EA8AA007FD708 /* Products */,
 			);
@@ -203,7 +209,9 @@
 				3B9EBB082A72E12F007CB4E0 /* TimingView.swift in Sources */,
 				3BABCA422A6EA8AA007FD708 /* ContentView.swift in Sources */,
 				3B9EBB0A2A72E5C9007CB4E0 /* ConfirmView.swift in Sources */,
+				3B68614F2AAF826C00582615 /* Thema+CoreDataClass.swift in Sources */,
 				3BABCA4F2A6EE8E9007FD708 /* RecordView.swift in Sources */,
+				3B6861502AAF826C00582615 /* Thema+CoreDataProperties.swift in Sources */,
 				3BABCA402A6EA8AA007FD708 /* RepeatTipsAppApp.swift in Sources */,
 				3BA1FA602A867F8B00A8714F /* RepeatTipsModel.xcdatamodeld in Sources */,
 				3B9EBB0C2A7561D0007CB4E0 /* ColorExtension.swift in Sources */,
