@@ -16,10 +16,10 @@ extension Thema {
         return NSFetchRequest<Thema>(entityName: "Thema")
     }
 
-    @NSManaged public var title: String?
     @NSManaged public var dateList: Data?
     @NSManaged public var detail: String?
     @NSManaged public var startDate: Date?
+    @NSManaged public var title: String?
 
 }
 
