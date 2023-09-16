@@ -2,7 +2,7 @@
 //  Thema+CoreDataProperties.swift
 //  RepeatTipsApp
 //
-//  Created by Kazuki Omori on 2023/09/12.
+//  Created by Kazuki Omori on 2023/09/16.
 //
 //
 
@@ -20,6 +20,7 @@ extension Thema {
     @NSManaged public var detail: String?
     @NSManaged public var startDate: Date?
     @NSManaged public var title: String?
+    @NSManaged public var id: UUID?
 
 }
 

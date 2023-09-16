@@ -3,6 +3,7 @@
     <entity name="Thema" representedClassName="Thema" syncable="YES">
         <attribute name="dateList" optional="YES" attributeType="Binary"/>
         <attribute name="detail" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="startDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="title" optional="YES" attributeType="String"/>
     </entity>
