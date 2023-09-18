@@ -23,4 +23,28 @@ class DateUtils {
         formatter.dateFormat = format
         return formatter.string(from: date)
     }
+    
+    /// Date型の配列をData型に変換
+    func convertDatesToData(dates: [Date]) -> Data? {
+        do {
+            let data = try NSKeyedArchiver.archivedData(withRootObject: dates, requiringSecureCoding: false)
+            return data
+        } catch {
+            print("Date型の配列をData型に変換できませんでした。エラー: \(error)")
+            return nil
+        }
+    }
+    
+    /// Data型をDate型の配列に変換
+    func convertDataToDates(data: Data) -> [Date]? {
+        do {
+            if let dates = try NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(data) as? [Date] {
+                return dates
+            }
+            return nil
+        } catch {
+            print("Data型をDate型の配列に変換できませんでした。エラー: \(error)")
+            return nil
+        }
+    }
 }
