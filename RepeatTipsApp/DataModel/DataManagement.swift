@@ -27,4 +27,13 @@ class DataManagement: ObservableObject {
             print("could not save")
         }
     }
+    
+    func addThema(title: String, time: Date, context: NSManagedObjectContext) {
+        let thema = Thema(context: context)
+        thema.id = UUID()
+        thema.title = title
+        thema.startDate = Date()
+        thema.alermTime = time
+        save(context: context)
+    }
 }
