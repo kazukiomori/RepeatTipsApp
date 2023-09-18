@@ -8,15 +8,20 @@
 import SwiftUI
 
 struct ConfirmView: View {
+    @Environment (\.managedObjectContext) var managedObjContext
+    @Environment (\.dismiss) var dismiss
+    
     @State var thema: String
     @State var time: Date
     @State var path = NavigationPath()
+    let dataManagement = DataManagement()
     var body: some View {
         VStack {
             ZStack {
                 HStack {
                     Spacer()
                     Button (action: {
+                        dataManagement.addThema(title: thema, time: time, context: managedObjContext)
                     }){
                     }
                 }
