@@ -65,7 +65,7 @@ struct CreateThemaView: View {
                 case let DestinationPath.timing(thema):
                     TimingView(thema: thema, path: $path)
                 case let DestinationPath.confirm(thema, time):
-                    ConfirmView(thema: thema, time: DateUtils.stringFromDate(date: time))
+                    ConfirmView(thema: thema, time: time)
                 }
             }
         }

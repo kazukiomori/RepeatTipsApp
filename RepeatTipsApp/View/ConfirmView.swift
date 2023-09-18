@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ConfirmView: View {
     @State var thema: String
-    @State var time: String
+    @State var time: Date
     @State var path = NavigationPath()
     var body: some View {
         VStack {
