@@ -19,7 +19,7 @@ class DataManagement: ObservableObject {
         }
     }
     
-    func save(context: NSManagedObjectContext) {
+    private func save(context: NSManagedObjectContext) {
         do {
             try context.save()
             print("success saved")
@@ -28,12 +28,19 @@ class DataManagement: ObservableObject {
         }
     }
     
-    func addThema(title: String, time: Date, context: NSManagedObjectContext) {
+    static func addThema(title: String, time: Date, context: NSManagedObjectContext) {
         let thema = Thema(context: context)
         thema.id = UUID()
         thema.title = title
         thema.startDate = Date()
         thema.alermTime = time
+        save(context: context)
+    }
+    
+    static func doThema(thema: Thema, achieveDays:
+                [Date], context: NSManagedObjectContext) {
+        guard let dateList = DateUtils.convertDatesToData(dates: achieveDays) else { return }
+        thema.dateList = dateList
         save(context: context)
     }
 }
