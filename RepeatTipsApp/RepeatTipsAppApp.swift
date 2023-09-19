@@ -9,10 +9,14 @@ import SwiftUI
 
 @main
 struct RepeatTipsAppApp: App {
+    
+    @StateObject private var dateController = DataManagement()
+    
     var body: some Scene {
         WindowGroup {
 //            ContentView()
             CreateThemaView()
+                .environment(\.managedObjectContext, dateController.container.viewContext)
         }
     }
 }
