@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct RecordView: View {
+    @Environment (\.managedObjectContext) var managedObjContext
+    @Environment (\.dismiss) var dismiss
     @State var progressValue: CGFloat = 0
     var body: some View {
         VStack {
