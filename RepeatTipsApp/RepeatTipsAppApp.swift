@@ -11,12 +11,16 @@ import SwiftUI
 struct RepeatTipsAppApp: App {
     
     @StateObject private var dateController = DataManagement()
-    
+    @FetchRequest(sortDescriptors: [SortDescriptor(\.startDate, order: .reverse)]) var thema: FetchedResults<Thema>
     var body: some Scene {
         WindowGroup {
-//            ContentView()
-            CreateThemaView()
-                .environment(\.managedObjectContext, dateController.container.viewContext)
+            if thema.count == 0 {
+                CreateThemaView()
+                    .environment(\.managedObjectContext, dateController.container.viewContext)
+            } else {
+                ContentView()
+                    .environment(\.managedObjectContext, dateController.container.viewContext)
+            }
         }
     }
 }
