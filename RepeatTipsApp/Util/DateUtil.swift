@@ -47,4 +47,30 @@ class DateUtils {
             return nil
         }
     }
+    
+    static func consecutiveDaysCount(in dates: [Date]) -> Int {
+        guard dates.count > 1 else {
+            return 0 // 配列に1つ以下の要素しかない場合、連続した日数は0です
+        }
+        
+        var consecutiveCount = 1 // 1日は最低限連続しているものとしてカウント
+        var previousDate = dates[0]
+        
+        for i in 1..<dates.count {
+            let currentDate = dates[i]
+            
+            // 日付の差を計算し、1日ずつ連続しているか確認
+            let calendar = Calendar.current
+            if let daysBetween = calendar.dateComponents([.day], from: previousDate, to: currentDate).day {
+                if daysBetween == 1 {
+                    consecutiveCount += 1
+                } else {
+                    // 日付が連続していない場合、カウントをリセット
+                    consecutiveCount = 1
+                }
+            }
+            previousDate = currentDate
+        }
+        return consecutiveCount
+    }
 }
