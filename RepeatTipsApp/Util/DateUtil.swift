@@ -50,10 +50,9 @@ class DateUtils {
     
     static func consecutiveDaysCount(in dates: [Date]) -> Int {
         guard dates.count > 1 else {
-            return 0 // 配列に1つ以下の要素しかない場合、連続した日数は0です
+            return 0
         }
-        
-        var consecutiveCount = 1 // 1日は最低限連続しているものとしてカウント
+        var consecutiveCount = 1 
         var previousDate = dates[0]
         
         for i in 1..<dates.count {
