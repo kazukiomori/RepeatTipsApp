@@ -52,7 +52,7 @@ struct ConfirmView: View {
                 .font(.system(size:30))
                 .bold()
             
-                Text("\(time)")
+            Text("\(DateUtils.stringFromDate(date: time))")
                     .font(.system(size:30))
                     .bold()
                     .padding()
