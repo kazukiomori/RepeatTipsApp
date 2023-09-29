@@ -8,10 +8,12 @@
 import UIKit
 
 class DateUtils {
+    static let calendar = Calendar(identifier: .gregorian)
+    
     static func dateFromString(string: String) -> Date {
         let formatter: DateFormatter = DateFormatter()
         let format = "yyyy/MM/dd HH:mm"
-        formatter.calendar = Calendar(identifier: .gregorian)
+        formatter.calendar = calendar
         formatter.dateFormat = format
         return formatter.date(from: string)!
     }
@@ -19,9 +21,17 @@ class DateUtils {
     static func stringFromDate(date: Date) -> String {
         let formatter: DateFormatter = DateFormatter()
         let format = "HH時mm分"
-        formatter.calendar = Calendar(identifier: .gregorian)
+        formatter.calendar = calendar
         formatter.dateFormat = format
         return formatter.string(from: date)
+    }
+    
+    static func timeFromString(time: String) -> Date {
+        let formatter: DateFormatter = DateFormatter()
+        let format = "HH:mm"
+        formatter.calendar = calendar
+        formatter.dateFormat = format
+        return formatter.date(from: time)!
     }
     
     /// Date型の配列をData型に変換
@@ -52,7 +62,7 @@ class DateUtils {
         guard dates.count > 1 else {
             return 0
         }
-        var consecutiveCount = 1 
+        var consecutiveCount = 1
         var previousDate = dates[0]
         
         for i in 1..<dates.count {
