@@ -10,6 +10,7 @@
 		3B68614C2AAC061C00582615 /* DataManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B68614B2AAC061C00582615 /* DataManagement.swift */; };
 		3B68614F2AAF826C00582615 /* Thema+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B68614D2AAF826C00582615 /* Thema+CoreDataClass.swift */; };
 		3B6861502AAF826C00582615 /* Thema+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B68614E2AAF826C00582615 /* Thema+CoreDataProperties.swift */; };
+		3B84F9412ACB158900076F85 /* UserNotificationUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B84F9402ACB158900076F85 /* UserNotificationUtil.swift */; };
 		3B9EBB042A71542C007CB4E0 /* PieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9EBB032A71542C007CB4E0 /* PieChartView.swift */; };
 		3B9EBB062A718BBA007CB4E0 /* CreateThemaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9EBB052A718BBA007CB4E0 /* CreateThemaView.swift */; };
 		3B9EBB082A72E12F007CB4E0 /* TimingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9EBB072A72E12F007CB4E0 /* TimingView.swift */; };
@@ -30,6 +31,7 @@
 		3B68614B2AAC061C00582615 /* DataManagement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManagement.swift; sourceTree = "<group>"; };
 		3B68614D2AAF826C00582615 /* Thema+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Thema+CoreDataClass.swift"; sourceTree = "<group>"; };
 		3B68614E2AAF826C00582615 /* Thema+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Thema+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3B84F9402ACB158900076F85 /* UserNotificationUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNotificationUtil.swift; sourceTree = "<group>"; };
 		3B9EBB032A71542C007CB4E0 /* PieChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartView.swift; sourceTree = "<group>"; };
 		3B9EBB052A718BBA007CB4E0 /* CreateThemaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateThemaView.swift; sourceTree = "<group>"; };
 		3B9EBB072A72E12F007CB4E0 /* TimingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimingView.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 			children = (
 				3BA1FA5A2A7D76EC00A8714F /* Window.swift */,
 				3BA1FA5C2A7EA3F800A8714F /* DateUtil.swift */,
+				3B84F9402ACB158900076F85 /* UserNotificationUtil.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -209,6 +212,7 @@
 				3B9EBB082A72E12F007CB4E0 /* TimingView.swift in Sources */,
 				3BABCA422A6EA8AA007FD708 /* ContentView.swift in Sources */,
 				3B9EBB0A2A72E5C9007CB4E0 /* ConfirmView.swift in Sources */,
+				3B84F9412ACB158900076F85 /* UserNotificationUtil.swift in Sources */,
 				3B68614F2AAF826C00582615 /* Thema+CoreDataClass.swift in Sources */,
 				3BABCA4F2A6EE8E9007FD708 /* RecordView.swift in Sources */,
 				3B6861502AAF826C00582615 /* Thema+CoreDataProperties.swift in Sources */,
