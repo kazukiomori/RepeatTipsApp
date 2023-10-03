@@ -8,7 +8,7 @@
 import UIKit
 import UserNotifications
 
-final class UserNotificationUtil: NSObject {
+final class UserNotificationUtil: NSObject, UNUserNotificationCenterDelegate {
 
     static var shared = UserNotificationUtil()
     private var center = UNUserNotificationCenter.current()
