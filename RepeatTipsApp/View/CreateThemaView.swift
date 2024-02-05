@@ -38,7 +38,7 @@ struct CreateThemaView: View {
                     .font(.system(size:30))
                     .bold()
                 //                .padding(.bottom)
-                TextField("継続したいこと", text: $thema)
+                TextField("継続するテーマを入力", text: $thema)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .padding(.top)
                     .font(.system(size: 25))
@@ -51,13 +51,11 @@ struct CreateThemaView: View {
                             .font(.largeTitle)
                             .foregroundColor(Color.white)
                     }
-                    .padding()
                     .background(Color.blue)
-                    .frame(width: 300, height: 50)
+                    .frame(width: 300, height: 30)
                     .disabled(thema.count == 0)
                 }
-                Spacer()
-                    .frame(height: 20)
+                .padding(.bottom, 20)
             }
             .edgesIgnoringSafeArea(.top)
             .navigationDestination(for: DestinationPath.self) { DestinationPath in
